@@ -22,7 +22,7 @@ anime.timeline({loop: false})
 $(".ml2").on (
   {
   "mousedown " : function() { 
-    $(".ml2").before("<h1 class='ml4'><span class='letters letters-1'>Ready</span> <span class='letters letters-2'>Set</span> <span class='letters letters-3'>Go!</span><span class='letters letters-4'><a href='than.html'>Click here</a></span></h1>");
+    $(".ml2").after("<h1 class='ml4'><span class='letters letters-1'>Ready</span> <span class='letters letters-2'>Set</span> <span class='letters letters-3'>Go!</span><span class='letters letters-4'><a href='than.html'>Click here</a></span></h1>");
     var ml4 = {};
 ml4.opacityIn = [0,1];
 ml4.scaleIn = [0.2, 1];
@@ -37,7 +37,8 @@ anime.timeline({loop: false})
     opacity: ml4.opacityIn,
     scale: ml4.scaleIn,
     duration: ml4.durationIn
-  }).add({
+  })
+  .add({
     targets: '.ml4 .letters-1',
     opacity: 0,
     scale: ml4.scaleOut,
