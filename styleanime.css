@@ -3,7 +3,13 @@
     font-size: 4em;
     text-align: center;
     color:blueviolet;
-    margin-top:40vh;
+    margin-top:5vh;
+  }
+
+  img {
+    display: block;
+    margin:auto;
+    margin-top:10vh;
   }
   
   .ml2 .letter {
